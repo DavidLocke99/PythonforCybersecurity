@@ -2,4 +2,6 @@ Milk
 Bread
 Bananas
 Eggs
-
+Candy
+Toys
+Pizza
