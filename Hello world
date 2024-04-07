@@ -1,0 +1,16 @@
+# Prompting the user for their name
+name = input("What is your name? ")
+
+# Printing "Hello <name>"
+print("Hello", name + "!")
+
+# Positive affirmation
+print("Today is going to be a great day!")
+
+# Extending the script
+# Prompting the user for their age
+age = int(input("How old are you? "))
+
+# Printing out "In 2 years, you will be <xx> years old"
+future_age = age + 2
+print("In 2 years, you will be", future_age, "years old.")
