@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
 # A simple "Hello World" script in python
 # Created 4/11/24 David
-name = input("What is your name? ")
-print("Hello", name + "!")
 
+# ask user name
+name = input("What is your name? ")
+
+# say hello to user
+print("Hello", name + "!")
 print("Today is going to be a great day!")
+
+# ask age
 age = int(input("How old are you? "))
+
+# calcualte future age
 future_age = age + 2
+
+# predict future age
 print("In 2 years, you will be", future_age, "years old.")
