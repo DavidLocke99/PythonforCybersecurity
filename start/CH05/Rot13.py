@@ -6,6 +6,7 @@
 message = input("what is the message? ")
 #for each letter
 message = message.lower()
+new_message = ""
 for letter in message:
     #rotate 13 letters
         #change to number
@@ -18,7 +19,9 @@ for letter in message:
             if letter_number>122:
                 #sub 26
                 letter_number -=26
-    print (letter_number)
-    #change to letter
-
-#print (new message)
+    # Change to letter
+    #print ( chr(letter_number),end='' )
+    new_message = new_message + chr(letter_number)
+    
+#print message
+print(new_message)
