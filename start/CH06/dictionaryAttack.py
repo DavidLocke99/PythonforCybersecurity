@@ -6,18 +6,23 @@
 import crypt
 import os
 
-file_path=os.path.dirpath(__file__)
-print (f"The path of the script is {file_path}")
+file_path=os.path.dirname(__file__)
 
 # ask for ID and Salt
 id_salt = input("what is the ID and Salt?")
 # ask for fully salted hash
 salted_pass = input("what is the fully salted and hash") 
 # open pw file
-f=open("top10.txt","r")
-guesses=f.read()
-print(guesses)
-# for each guess in pw file
+f=open(file_path+ "/top10.txt","r")
+# for each guess in pass file
+for guess in f:
+    guess=guess.strip()
+
     # hash the guess
+    hashedg_guess=crypt.crypt(guess,id_salt)
+    
     # is guess = to target?
-        # print guess then quit
+    if hashedg_guess==salted_pass:
+        # print guess and quit
+        print(guess)
+        exit()
