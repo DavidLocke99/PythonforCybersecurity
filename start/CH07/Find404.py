@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Script that scans web server logs for 404 errors
 # By 5/14 David Locke
 
 import os
@@ -17,5 +18,8 @@ while True:
         break
     #check for 404
     if " 404 " in line:
-        #print line
-        print(line)
+        if "favicon.ico" in line:
+            pass
+    elif "%" in line:
+            #print line
+            print(line)
