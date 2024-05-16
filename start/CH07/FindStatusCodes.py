@@ -36,4 +36,7 @@ while True:
             # else add to dictionary
             results_dict[item]=1
 
-print(results_dict)
+
+for w in sorted(results_dict, key = results_dict.get, reverse=True):
+
+    print(w, results_dict[w])
