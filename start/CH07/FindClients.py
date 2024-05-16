@@ -37,6 +37,7 @@ while True:
             results_dict[item]=1
 
 
-for w in sorted(results_dict, key = results_dict.get, reverse=True):
+for w in sorted(results_dict, key = results_dict.get, reverse=False
+):
 
     print(w, results_dict[w])
