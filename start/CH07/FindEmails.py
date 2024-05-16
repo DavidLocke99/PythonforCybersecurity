@@ -7,7 +7,7 @@ import os
 import re
 
 #set up pattern to match
-re_pattern = r'^\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}'
+re_pattern = r'\S+@\S+\.\S+'
 
 
 file_path=os.path.dirname(__file__)
