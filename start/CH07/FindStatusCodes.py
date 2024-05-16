@@ -17,6 +17,8 @@ log_file=input("which file to analyze? ")
 #open file
 f=open(file_path+"/"+log_file, "r")
 
+results_dict = {}
+
 #read file line by line
 while True:
     line=f.readline()
@@ -24,4 +26,14 @@ while True:
         break
     m = re.search(re_pattern, line) 
     if m:
-        print(m.group())
+        #print(m.group())
+        item = m.group()
+        # is item in dcictonary
+        if item in results_dict.keys():
+            # if Y add 1 to count
+            results_dict[item] = results_dict[item]+1
+        else:    
+            # else add to dictionary
+            results_dict[item]=1
+
+print(results_dict)
