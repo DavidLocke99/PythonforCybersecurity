@@ -20,11 +20,6 @@ def check_password(first_five):
         response_dict[key] = value
 
     return response_dict
-    
-
-# ask for passwword
-
-pass_to_test="qwerty"
 
 # generate sha-1 hex digits for some input string
 def SHA1(msg:str) -> str:
