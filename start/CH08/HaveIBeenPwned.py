@@ -34,7 +34,7 @@ def SHA1(msg:str) -> str:
     return digest.upper()
 
 # ask for PW
-pass_to_test="qwerty"
+pass_to_test = input("What password do you want to test? ")
 
 # get hash and split
 hash_full = SHA1(pass_to_test)
